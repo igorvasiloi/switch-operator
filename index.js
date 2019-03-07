@@ -1,23 +1,11 @@
 var day = prompt("Please eneter your day, for example - thursday" );
 
-debugger;
 
+if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday" || day === "Friday" ) {
+  alert("Working day");
+} else if (day === "Saturday" || day === "Sunday") {
+  alert("Weekend");
 
-switch (day) {
-  case "monday":
-  case "tuesday":
-  case "wednesday":
-  case "thursday":
-  case "fruday":
-   alert("working day");
-   break;
-
-  case "saturday":
-  case "sunday":
-    alert("weekend");
-    break;
-
-    default:
-    alert("Can not define, please try another value");
-    break;
+} else {
+  alert("Try another value");
 }
